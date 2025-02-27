@@ -22,23 +22,23 @@ const Nav = () => {
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-8 tracking-wide text-[18px] font-[600] list-none">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/projects">Project</Link></li>
-        <li><Link to="/blog">Blog</Link></li>
-        <li><Link to="/faq">FAQ</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/newsletter">Newsletter</Link></li>
+        <li className="hover:underline"><Link to="/">Home</Link></li>
+        <li className="hover:underline"><Link to="/projects">Project</Link></li>
+        <li className="hover:underline"><Link to="/blog">Blog</Link></li>
+        <li className="hover:underline"><Link to="/faq">FAQ</Link></li>
+        <li className="hover:underline"><Link to="/contact">Contact</Link></li>
+        <li className="hover:underline"><Link to="/newsletter">Newsletter</Link></li>
       </ul>
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <ul className="absolute top-14 left-0 w-full bg-white shadow-md p-5 flex flex-col items-center gap-4 md:hidden">
-          <li onClick={() => setIsOpen(false)}><Link to="/">Home</Link></li>
-          <li onClick={() => setIsOpen(false)}><Link to="/projects">Project</Link></li>
-          <li onClick={() => setIsOpen(false)}><Link to="/blog">Blog</Link></li>
-          <li onClick={() => setIsOpen(false)}><Link to="/faq">FAQ</Link></li>
-          <li onClick={() => setIsOpen(false)}><Link to="/contact">Contact</Link></li>
-          <li onClick={() => setIsOpen(false)}><Link to="/newsletter">Newsletter</Link></li>
+          <li onClick={() => setIsOpen(false)} className="hover:underline"><Link to="/">Home</Link></li>
+          <li onClick={() => setIsOpen(false)} className="hover:underline"><Link to="/projects">Project</Link></li>
+          <li onClick={() => setIsOpen(false)} className="hover:underline"><Link to="/blog">Blog</Link></li>
+          <li onClick={() => setIsOpen(false)} className="hover:underline"><Link to="/faq">FAQ</Link></li>
+          <li onClick={() => setIsOpen(false)} className="hover:underline"><Link to="/contact">Contact</Link></li>
+          <li onClick={() => setIsOpen(false)} className="hover:underline"><Link to="/newsletter">Newsletter</Link></li>
         </ul>
       )}
     </div>
